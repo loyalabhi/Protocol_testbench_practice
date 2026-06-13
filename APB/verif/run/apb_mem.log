@@ -1,0 +1,143 @@
+# vsim -coverage -c work.tb_top "+UVM_TESTNAME=apb_mem_test" -wlf vsim.wlf -l apb_mem.log -do "coverage report; run -all; coverage report; coverage save apb_mem_cov.ucdb ; quit -f" 
+# Start time: 15:32:40 on Jun 11,2026
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Support of the MGLS_LICENSE_FILE and LM_LICENSE_FILE licensing environment variables will be discontinued starting with the 2025.1 release. Please update to using the SALT_LICENSE_SERVER variable.
+# Please contact Siemens EDA Customer Support (https://support.sw.siemens.com/) for assistance.
+# //  Questa Sim-64
+# //  Version 2024.1 win64 Feb  1 2024
+# //
+# // Unpublished work. Copyright 2024 Siemens
+# //
+# // This material contains trade secrets or otherwise confidential information
+# // owned by Siemens Industry Software Inc. or its affiliates (collectively,
+# // "SISW"), or its licensors. Access to and use of this information is strictly
+# // limited as set forth in the Customer's applicable agreements with SISW.
+# //
+# // This material may not be copied, distributed, or otherwise disclosed outside
+# // of the Customer's facilities without the express written permission of SISW,
+# // and may not be used in any way not expressly authorized by SISW.
+# //
+# Loading sv_std.std
+# Loading work.apb_interface(fast)
+# Loading mtiUvm.uvm_pkg(fast)
+# Loading work.tb_pkg(fast)
+# Loading work.tb_top_sv_unit(fast)
+# Loading mtiUvm.questa_uvm_pkg(fast)
+# Loading work.tb_top(fast)
+# Loading C:/questasim64_2024.1/uvm-1.1d\win64\uvm_dpi.dll
+# coverage report
+# Coverage Report Summary Data by instance
+# 
+# =================================================================================
+# === Instance: /tb_top/vif
+# === Design Unit: work.apb_interface
+# =================================================================================
+#     Enabled Coverage              Bins      Hits    Misses  Coverage
+#     ----------------              ----      ----    ------  --------
+#     Assertions                       4         0         4     0.00%
+#     Statements                      13         0        13     0.00%
+#     Toggles                        154         0       154     0.00%
+# 
+# =================================================================================
+# === Instance: /tb_top/dut
+# === Design Unit: work.apb_slave
+# =================================================================================
+#     Enabled Coverage              Bins      Hits    Misses  Coverage
+#     ----------------              ----      ----    ------  --------
+#     Branches                         9         0         9     0.00%
+#     Conditions                       8         0         8     0.00%
+#     Statements                      12         0        12     0.00%
+#     Toggles                        132         0       132     0.00%
+# 
+# =================================================================================
+# === Instance: /tb_top
+# === Design Unit: work.tb_top
+# =================================================================================
+#     Enabled Coverage              Bins      Hits    Misses  Coverage
+#     ----------------              ----      ----    ------  --------
+#     Statements                      11         0        11     0.00%
+#     Toggles                          2         0         2     0.00%
+# 
+# =================================================================================
+# === Instance: /tb_pkg
+# === Design Unit: work.tb_pkg
+# =================================================================================
+#     Enabled Coverage              Bins      Hits    Misses  Coverage
+#     ----------------              ----      ----    ------  --------
+#     Branches                       148         0       148     0.00%
+#     Conditions                      28         0        28     0.00%
+#     Statements                     233         0       233     0.00%
+# 
+# 
+# TOTAL ASSERTION COVERAGE: 0.00%  ASSERTIONS: 4
+# 
+# Total Coverage By Instance (filtered view): 0.00%
+# 
+# 
+#  run -all
+# ----------------------------------------------------------------
+# UVM-1.1d
+# (C) 2007-2013 Mentor Graphics Corporation
+# (C) 2007-2013 Cadence Design Systems, Inc.
+# (C) 2006-2013 Synopsys, Inc.
+# (C) 2011-2013 Cypress Semiconductor Corp.
+# ----------------------------------------------------------------
+# 
+#   ***********       IMPORTANT RELEASE NOTES         ************
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_NO_DEPRECATED undefined.
+#   See http://www.eda.org/svdb/view.php?id=3313 for more details.
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_OBJECT_MUST_HAVE_CONSTRUCTOR undefined.
+#   See http://www.eda.org/svdb/view.php?id=3770 for more details.
+# 
+#       (Specify +UVM_NO_RELNOTES to turn off this notice)
+# 
+# UVM_INFO verilog_src/questa_uvm_pkg-1.2/src/questa_uvm_pkg.sv(277) @ 0: reporter [Questa UVM] QUESTA_UVM-1.2.3
+# UVM_INFO verilog_src/questa_uvm_pkg-1.2/src/questa_uvm_pkg.sv(278) @ 0: reporter [Questa UVM]  questa_uvm::init(+struct)
+# TB_TOP: setting apb_interface vif = '{PRESETn:0 PENABLE:x PSEL:x PWRITE:x PADDR:x PWDATA:x PRDATA:x PREADY:x}
+# TB_TOP: setting apb_interface vif = '{PRESETn:0 PENABLE:x PSEL:x PWRITE:x PADDR:x PWDATA:x PRDATA:x PREADY:x}
+# UVM_INFO @ 0: reporter [RNTST] Running test apb_mem_test...
+# UVM_INFO @ 0: reporter [UVMTOP] UVM testbench topology:
+# --------------------------------------------------------------
+# Name                       Type                    Size  Value
+# --------------------------------------------------------------
+# uvm_test_top               apb_mem_test            -     @475 
+#   env                      apb_env                 -     @482 
+#     agnt                   apb_agent               -     @489 
+#       drv                  apb_driver              -     @620 
+#         rsp_port           uvm_analysis_port       -     @635 
+#         seq_item_port      uvm_seq_item_pull_port  -     @627 
+#       mon                  apb_monitor             -     @643 
+#         ap                 uvm_analysis_port       -     @650 
+#       seqr                 apb_sequencer           -     @511 
+#         rsp_export         uvm_analysis_export     -     @518 
+#         seq_item_export    uvm_seq_item_pull_imp   -     @612 
+#         arbitration_queue  array                   0     -    
+#         lock_queue         array                   0     -    
+#         num_last_reqs      integral                32    'd1  
+#         num_last_rsps      integral                32    'd1  
+#     scb                    apb_scoreboard          -     @496 
+#       imp                  uvm_analysis_imp        -     @503 
+# --------------------------------------------------------------
+# 
+# UVM_INFO verilog_src/uvm-1.1d/src/base/uvm_objection.svh(1267) @ 25625: reporter [TEST_DONE] 'run' phase is ready to proceed to the 'extract' phase
+# 
+# --- UVM Report Summary ---
+# 
+# ** Report counts by severity
+# UVM_INFO :    5
+# UVM_WARNING :    0
+# UVM_ERROR :    0
+# UVM_FATAL :    0
+# ** Report counts by id
+# [Questa UVM]     2
+# [RNTST]     1
+# [TEST_DONE]     1
+# [UVMTOP]     1
+# ** Note: $finish    : C:/questasim64_2024.1/win64/../verilog_src/uvm-1.1d/src/base/uvm_root.svh(430)
+#    Time: 25625 ns  Iteration: 62  Instance: /tb_top
+# End time: 15:32:43 on Jun 11,2026, Elapsed time: 0:00:03
+# Errors: 0, Warnings: 0
