@@ -13,7 +13,7 @@ class apb_test extends uvm_test;
      begin
             apb_agent_config agent_cfg;
             agent_cfg = config_agent_config::type_id::create("agent_cfg");
-       uvm_config_db #(config_agent_config)::set(this, "env.apb_agent", "cfg", agent_cfg);
+       uvm_config_db #(apb_agent_config)::set(this, "env.agnt", "cfg", agent_cfg);
         end
   endfunction: build_phase
 
