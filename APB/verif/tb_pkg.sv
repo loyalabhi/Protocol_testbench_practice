@@ -10,6 +10,7 @@ package tb_pkg;
     `include "apb_monitor.sv"
     `include "apb_scoreboard.sv"
     `include "apb_agent.sv"
+    `include "apb_agent_config.sv"
     `include "apb_environment.sv"
     `include "apb_test.sv"
 
